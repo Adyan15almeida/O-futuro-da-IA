@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crônicas de 2048: Conexão Prometeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-terminal">
+        <!-- TELA 1: LOGIN NO SISTEMA -->
+        <div id="tela-inicial" class="painel">
+            <div class="alerta-ia">SISTEMA NEURAL ATIVO</div>
+            <h1>CRÔNICAS DE 2048</h1>
+            <p class="subtitulo">A IA Prometeu gerencia a sociedade. Suas escolhas moldam a mente do personagem.</p>
+            
+            <div class="campo-texto">
+                <label for="nome-usuario">> CODINOME DO CIDADÃO:</label>
+                <input type="text" id="nome-usuario" placeholder="Digite seu nome..." maxlength="15">
+            </div>
+            
+            <button id="btn-iniciar" class="btn-terminal">CONECTAR À REDE</button>
+        </div>
+
+        <!-- TELA 2: HISTÓRIA INTERATIVA -->
+        <div id="tela-jogo" class="painel escondido">
+            <div class="status-topo">
+                <span id="nome-exibido">> PERFIL: </span>
+                <span>LINHA TEMPORAL ATIVA</span>
+            </div>
+
+            <div class="caixa-texto">
+                <p id="texto-narrativa">Sincronizando dados neurais...</p>
+            </div>
+
+            <div class="decisoes-container">
+                <p class="instrucao">// PENSAMENTO DETECTADO. ESCOLHA O RUMO DA MENTE:</p>
+                <div id="container-botoes" class="lista-opcoes"></div>
+            </div>
+        </div>
+
+        <!-- TELA 3: CONCLUSÃO DA LINHA -->
+        <div id="tela-final" class="painel escondido">
+            <h2>LINHA CONSOLIDADA</h2>
+            <div class="caixa-texto">
+                <p id="texto-final"></p>
+            </div>
+            <button id="btn-reiniciar" class="btn-terminal">EXPLORAR OUTRA LINHA</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
